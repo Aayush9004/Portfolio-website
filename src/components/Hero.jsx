@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import CanvasBackground from './CanvasBackground';
+import resumePdf from '../assets/Resume.pdf';
 
 export default function Hero() {
   const [roleText, setRoleText] = useState('//');
@@ -64,7 +65,7 @@ export default function Hero() {
           <a href="#projects" className="btn-primary" id="cta-projects">
             <i className="fas fa-code"></i> View Projects
           </a>
-          <a href="/resume.pdf" download className="btn-outline" id="cta-resume">
+          <a href={resumePdf} download="Resume.pdf" className="btn-outline" id="cta-resume">
             <i className="fas fa-download"></i> Download Resume
           </a>
         </div>
