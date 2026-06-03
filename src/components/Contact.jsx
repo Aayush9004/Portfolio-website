@@ -18,8 +18,8 @@ export default function Contact() {
     e.preventDefault();
     setSubmitStatus('sending');
 
-    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY?.replace(/['"]/g, '');
-    if (!accessKey || accessKey.includes('YOUR_WEB3FORMS_ACCESS_KEY')) {
+    const accessKey = '5b77ce54-3903-4572-87d3-d90c870fb303';
+    if (!accessKey) {
       console.warn("Web3Forms access key is not configured.");
       setSubmitStatus('error');
       setTimeout(() => {
